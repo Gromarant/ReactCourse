@@ -1,5 +1,5 @@
 //exports
-    //export default []     //Default exportation structure 
+    //export default []     //Default exportation structure
 
         //Array
             const heroes = [
@@ -34,7 +34,7 @@
 
     export default heroes;
 
-    export const owners = [ 'DC', 'Marvel'];
+    // export const owners = [ 'DC', 'Marvel'];
 
     // export {                //global export
     //     heroes,
