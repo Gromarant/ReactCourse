@@ -25,3 +25,27 @@
 
       // default value of props 
         // export const FirstApp = ( { title = 'Hola mundo' } ) => {}
+
+//lesson 41 - propTypes
+    //this way the code generate an Error inside the component, it is not a good practice
+  export const PropsAppErr = ( { title } ) => {
+      if( !title ) {
+        throw new Error( 'The title is missing' );
+      }
+      return (
+        <h1>{ title }</h1>
+      )
+    }
+
+    //Imported and used PropTypes, with Vite the PropTypes are not downlouded
+      import PropTypes from 'prop-types';
+      
+      export const PropsApp = ( {title} ) => {
+        return (
+          <h1>{ title }</h1>
+        )
+      }
+    
+      PropsApp.protoTypes = {
+        title: PropTypes.string.isRequired,
+      }
