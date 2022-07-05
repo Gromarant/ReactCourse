@@ -7,6 +7,6 @@ import './styles.css';
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         {/* <HelloWordApp /> */}
-        <FirstApp title="The salary of 50.000 Euros is for you" subtitl={123} />
+        <FirstApp title="The salary of 50.000 Euros is for you" subtitle={25000} />
     </React.StrictMode>
 );
