@@ -40,7 +40,7 @@
     //Imported and used PropTypes, with Vite the PropTypes are not downlouded
       import PropTypes from 'prop-types';
       
-      export const PropsApp = ( {title} ) => {
+      export const PropsApp = ( { title } ) => {
         return (
           <h1>{ title }</h1>
         )
@@ -49,3 +49,40 @@
       PropsApp.protoTypes = {
         title: PropTypes.string.isRequired,
       }
+
+//lesson 42 - DefaultProps 
+  //DefaultProps in the top of the component
+    // export const DefPropsApp = ({
+    //   title,
+    //   subtitle = 'Gromarant',
+    // }) => {
+    //     return (
+    //      <>
+    //         <h1>{ title }</h1>
+    //         <h2>{ subtitle }</h2>
+    //       </>
+    //     )
+    //   }
+
+
+  //DefaultProps in the bottom of the component
+    export const DefPropsApp = ({ title, subtitle, name }) => {
+        return (
+         <>
+            <h1>{ title }</h1>
+            <h2>{ subtitle }</h2>
+            <h3>{ name }</h3>
+          </>
+        )
+      }
+
+    DefPropsApp.defaultProps = {
+      name: 'Mariangelica Rodriguez',
+      subtitle: 'There is not subtitle',
+      title: 'There is not title',
+    }
+
+    DefPropsApp.protoTypes = {
+      subtitle: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    } 
