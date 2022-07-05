@@ -1,9 +1,29 @@
-//Homawork
-  //1. create a new component inside of src folder named 'CounterApp'
-  //2. CounterApp must be a functional component
-  //3. The content of CounterApp must be:
-    // <h1>CounterApp</h1>
-    // <h2> { value } </h2>
-  //4. 'Value' is a property sended from the componentFather to CounterApp (must be a numeric validated with PropTypes)
-  //5. Replaced into index.js or main.jsx the <PrimeraApp /> component to <CounterApp /> (do not forget the 'Value' that must be a number)
-  //6. Make sure you have not Errors or warnings (if you have any unused warning, comment the code)
+import PropTypes from 'prop-types';
+
+const handleEvent = ( event ) => {    //when the Constant have not relation with event, is a good practice writte it outside of the component
+  console.log( event );
+}
+
+export const EventApp = ( { value } ) => {
+  return (
+        <>
+            <h1>EventApp</h1>
+            <h2> { value } </h2>
+            <button onClick={ handleEvent }> 
+            +1 
+            </button>
+        </>
+    );
+  }
+
+EventApp.propTypes = {
+    value: PropTypes.number.isRequired,
+}
+
+//Click event inside xml code
+  // <button onClick={ function() { console.log( '+1' ) } }> 
+  //   +1 
+  // </button>
+
+//Click event referenced inside xml code
+  // <button onClick={ ( event ) => handleEvent( event ) }> 
