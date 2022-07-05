@@ -46,7 +46,7 @@ export const PropsAppErr = ( { title } ) => {
       )
     }
   
-    PropsApp.protoTypes = {
+    PropsApp.propTypes = {
       title: PropTypes.string.isRequired,
     }
 
@@ -82,7 +82,7 @@ export const PropsAppErr = ( { title } ) => {
     title: 'There is not title',
   }
 
-  DefPropsApp.protoTypes = {
+  DefPropsApp.propTypes = {
     subtitle: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   } 
