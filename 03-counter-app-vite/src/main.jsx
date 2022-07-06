@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { CounterAppHook } from './FirstApp';
+import { CounterAppHandle } from './FirstApp';
 import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        < CounterAppHook value={ 100 }/>
+        < CounterAppHandle value={ 0 }/>
     </React.StrictMode>
 );
 
