@@ -18,6 +18,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
     // import { CounterApp } from './CounterApp';
     // import { EventApp } from './FirstApp';
     // import { CounterApp1000 } from './FirstApp';
+    // import { CounterAppHook } from './FirstApp';
 
 
 //All components Rendering
@@ -29,4 +30,5 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
         // < CounterApp value={ 100000 }/>
         // < EventApp value={ 100000 }/>
         // < CounterApp1000 value={ 10 }/>
-    // </React.StrictMode>
+        // < CounterAppHook value={ 100 }/>
+        // </React.StrictMode>
