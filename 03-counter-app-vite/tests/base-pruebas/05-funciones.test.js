@@ -29,7 +29,7 @@ describe('05-funciones.js test', () => {
 
     //  });
 
-     test('getUserActive must be return an object', () => { 
+     test('getUserActive must be return an object', () => {     //resolve by Fernando
         
         const name = 'Mariangelica';
 
