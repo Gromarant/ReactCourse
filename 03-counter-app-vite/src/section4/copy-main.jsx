@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { CounterAppHandle } from './FirstApp';
-import './css/styles.css';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import { CounterAppHandle } from './CounterAppHandle';
+// import './css/styles.css';
 
-ReactDOM.createRoot( document.getElementById('root') ).render(
-    <React.StrictMode>
-        < CounterAppHandle value={ 0 }/>
-    </React.StrictMode>
-);
+// ReactDOM.createRoot( document.getElementById('root') ).render(
+//     <React.StrictMode>
+//         < CounterAppHandle value={ 0 }/>
+//     </React.StrictMode>
+// );
 
 
 // All imports made
