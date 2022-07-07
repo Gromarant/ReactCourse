@@ -14,18 +14,31 @@ describe('05-funciones.js test', () => {
         expect( testUser ).toEqual( user );
     });
 
-    test('getUserActive must be return an object', () => { 
+    // test('getUserActive must be return an object', () => { 
+        
+    //     const name = 'Mariangelica';
+
+    //     const testUserName = {
+    //         uid: 'ABC567',
+    //         username: name
+    //     };
+
+    //     const userActive = getUserActive( name );
+
+    //     expect( testUserName ).toEqual( userActive );
+
+    //  });
+
+     test('getUserActive must be return an object', () => { 
         
         const name = 'Mariangelica';
-        
-        const testUserName = {
-            uid: 'ABC567',
-            username: name
-        };
 
         const userActive = getUserActive( name );
 
-        expect( testUserName ).toEqual( userActive );
+        expect( userActive ).toStrictEqual( {
+            uid: 'ABC567',
+            username: name
+        });
 
      });
 
