@@ -1,4 +1,4 @@
-import { getUser } from "../../src/base-pruebas/05-funciones";
+import { getUser, getUserActive } from "../../src/base-pruebas/05-funciones";
 
 describe('05-funciones.js test', () => { 
 
@@ -13,5 +13,20 @@ describe('05-funciones.js test', () => {
         
         expect( testUser ).toEqual( user );
     });
+
+    test('getUserActive must be return an object', () => { 
+        
+        const name = 'Mariangelica';
+        
+        const testUserName = {
+            uid: 'ABC567',
+            username: name
+        };
+
+        const userActive = getUserActive( name );
+
+        expect( testUserName ).toEqual( userActive );
+
+     });
 
  });
