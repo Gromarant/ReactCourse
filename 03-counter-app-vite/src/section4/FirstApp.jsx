@@ -14,3 +14,9 @@ FirstApp.Proptypes = {
     title: Proptypes.string.isRequired,
     subTitle: Proptypes.string,
 }
+
+FirstApp.defaultProps = {
+    name: 'Mariangelica Rodriguez',
+    subTitle: 'No hay subtítulo',
+    // title: 'No hay título',
+}
