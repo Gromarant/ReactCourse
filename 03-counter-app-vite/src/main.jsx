@@ -5,6 +5,6 @@ import './styleGlobal.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        < FirstApp />
+        < FirstApp title="www.gromarant.com"/>
     </React.StrictMode>
 );
