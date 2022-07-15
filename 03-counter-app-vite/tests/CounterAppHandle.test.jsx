@@ -34,7 +34,7 @@ describe('Test to <CounterAppHandle />', () => {
      test('5. should be work the reset button', () => { 
 
         render( <CounterAppHandle value={ value } /> );
-        fireEvent.click( screen.getByText( 'Reset' ));
+        fireEvent.click( screen.getByRole( 'button', { name: 'btn-reset'} ));
         expect( screen.getByText( value ) ).toBeTruthy();
      })
 });
