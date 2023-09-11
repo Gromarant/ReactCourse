@@ -7,3 +7,10 @@
 
     console.log ( name, lastName, gettingValue);
 
+//scope
+    if (true) {
+        let gettingValue = 6;
+        console.log(gettingValue);
+    }
+
+    console.log(gettingValue);
