@@ -4,12 +4,13 @@
     const lastName = 'Varona';
     const nickName = 'Mig';
 
-    const entireName = `${ name } ${ lastName }`;
+    const fullName = `${ name } ${ lastName }`;
 
-    console.log (entireName);
+    console.log (fullName);
 
-    function getSaludo( nickName ) {
+    function getSaludo( nickName = 'User' ) {
         return `Hola ${ nickName }`;
     }
 
-    console.log( getSaludo( nickName ));
+    console.log( 'function with an argument: ', getSaludo( nickName ));
+    console.log( 'function without an argument: ', getSaludo() );
